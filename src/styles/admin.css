@@ -1,0 +1,71 @@
+/* =========================================================
+   GameStock - painel administrativo
+   ========================================================= */
+.admin { display: grid; grid-template-columns: 220px 1fr; gap: 0; max-width: 1400px; margin: -24px auto 0; min-height: 70vh; }
+.admin-lateral { background: var(--barra); padding: 18px 0; display: flex; flex-direction: column; }
+.admin-titulo { font-family: var(--fonte-titulo); color: var(--ciano); padding: 0 18px 14px; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.admin-lateral nav { display: flex; flex-direction: column; }
+.admin-lateral nav a { color: var(--texto); padding: 10px 18px; font-size: 14px; border-left: 3px solid transparent; }
+.admin-lateral nav a:hover { background: rgba(255,255,255,.05); }
+.admin-lateral nav a.ativa { border-left-color: var(--destaque); background: rgba(103,193,245,.1); color: var(--branco); }
+.admin-voltar { margin-top: auto; padding: 14px 18px; font-size: 13px; }
+.admin-conteudo { padding: 24px; min-width: 0; }
+.admin-cabecalho { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+.admin-cabecalho h1 { margin: 0; }
+
+/* cards de números */
+.grade-numeros { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.card-numero { background: var(--painel); border: 1px solid var(--borda); border-top: 3px solid var(--destaque); padding: 14px; display: flex; flex-direction: column; gap: 2px; }
+.card-numero span { font-size: 12px; text-transform: uppercase; color: var(--texto-fraco); letter-spacing: .5px; }
+.card-numero strong { font-family: var(--fonte-titulo); font-size: 26px; color: var(--branco); }
+
+/* gráfico de barras só com CSS */
+.grafico-barras { display: flex; align-items: flex-end; gap: 3px; height: 200px; padding-top: 10px; border-bottom: 1px solid var(--borda); }
+.grafico-coluna { flex: 1; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; }
+.grafico-barra { width: 100%; min-height: 2px; background: linear-gradient(180deg, var(--ciano), #2d73ff); border-radius: 2px 2px 0 0; }
+.grafico-coluna:hover .grafico-barra { filter: brightness(1.3); }
+.grafico-coluna span { font-size: 10px; color: var(--texto-fraco); }
+
+.admin-duas-colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.barra-horizontal { display: grid; grid-template-columns: 170px 1fr 110px; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
+.barra-horizontal > div { background: var(--fundo-escuro); height: 12px; }
+.barra-horizontal > div > div { background: var(--destaque); height: 100%; }
+.barra-horizontal strong { text-align: right; color: var(--branco); }
+.lista-admin { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.lista-admin li { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.lista-admin img { width: 72px; aspect-ratio: 16 / 9; object-fit: cover; }
+.lista-admin span { flex: 1; color: var(--branco); }
+.miniatura-tabela { width: 80px; aspect-ratio: 16 / 9; object-fit: cover; }
+
+/* formulário de jogo */
+.form-jogo fieldset { border: 1px solid var(--borda); padding: 12px; display: flex; flex-direction: column; gap: 10px; margin: 0; }
+.form-jogo legend { color: var(--destaque); font-family: var(--fonte-titulo); padding: 0 6px; }
+.multi-escolha { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 4px 12px; }
+.multi-escolha .opcao { font-size: 13px; }
+.multi-escolha .inativa { opacity: .55; }
+.multi-escolha-alta { max-height: 260px; overflow-y: auto; padding: 6px; background: var(--fundo-escuro); }
+.capa-editor { display: flex; gap: 16px; flex-wrap: wrap; }
+.capa-previa { width: 240px; }
+.capa-previa img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--borda); }
+.capa-editor > div:last-child { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 220px; }
+.rodape-formulario { justify-content: flex-end; border-top: 1px solid var(--borda); padding-top: 12px; }
+.gerenciar-midia { margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+.gerenciar-midia h3 { margin: 0; }
+.lista-imagens { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+.item-imagem { background: var(--fundo-escuro); padding: 6px; display: flex; flex-direction: column; gap: 4px; }
+.item-imagem img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.lista-simples { list-style: none; padding: 0; margin: 0; }
+.lista-simples li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 6px 0; word-break: break-all; }
+.form-inline { margin-bottom: 16px; max-width: 520px; }
+
+@media (max-width: 860px) {
+  .admin { grid-template-columns: 1fr; margin-top: -24px; }
+  .admin-lateral { padding: 8px 0; }
+  .admin-lateral nav { flex-direction: row; overflow-x: auto; }
+  .admin-lateral nav a { white-space: nowrap; border-left: 0; border-bottom: 3px solid transparent; }
+  .admin-lateral nav a.ativa { border-bottom-color: var(--destaque); }
+  .admin-voltar { display: none; }
+  .admin-conteudo { padding: 16px; }
+  .admin-duas-colunas { grid-template-columns: 1fr; }
+  .barra-horizontal { grid-template-columns: 110px 1fr 90px; }
+}

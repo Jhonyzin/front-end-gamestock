@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 60" width="96" height="60">
+  <!-- Placeholder: troque pelo logo real mantendo o nome do arquivo (mastercard.svg) -->
+  <rect width="96" height="60" rx="8" fill="#ffffff"/>
+  
+  <circle cx="38" cy="30" r="18" fill="#EB001B"/>
+  <circle cx="58" cy="30" r="18" fill="#F79E1B" fill-opacity="0.9"/>
+  <path d="M48 15 A18 18 0 0 1 48 45 A18 18 0 0 1 48 15 Z" fill="#FF5F00"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 60" width="96" height="60">
+  <!-- Placeholder: troque pelo logo real mantendo o nome do arquivo (diners.svg) -->
+  <rect width="96" height="60" rx="8" fill="#ffffff"/>
+  
+  <circle cx="48" cy="30" r="20" fill="none" stroke="#0079BE" stroke-width="6"/>
+  <text x="48" y="56" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#0079BE">DINERS</text>
+</svg>

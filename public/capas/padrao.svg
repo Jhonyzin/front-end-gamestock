@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <!-- Placeholder usado quando a capa do jogo ainda não existe -->
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2838"/>
+      <stop offset="1" stop-color="#0f1722"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#fundo)"/>
+  <g fill="none" stroke="#2a3f5a" stroke-width="2">
+    <path d="M0 300 L640 120"/><path d="M0 340 L640 160"/><path d="M0 260 L640 80"/>
+  </g>
+  <g transform="translate(320 150)" fill="#66c0f4" opacity="0.85">
+    <rect x="-70" y="-30" width="140" height="64" rx="32"/>
+    <rect x="-48" y="-6" width="28" height="8" fill="#0f1722"/>
+    <rect x="-38" y="-16" width="8" height="28" fill="#0f1722"/>
+    <circle cx="32" cy="-4" r="7" fill="#0f1722"/>
+    <circle cx="48" cy="10" r="7" fill="#0f1722"/>
+  </g>
+  <text x="320" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff">GAME<tspan fill="#00e5ff">STOCK</tspan></text>
+  <text x="320" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#8f98a0">Imagem em breve</text>
+</svg>

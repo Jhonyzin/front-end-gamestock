@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Placeholder: troque pelo logo real mantendo o nome do arquivo (american-express.svg) -->
+  <rect width="64" height="64" rx="12" fill="#006FCF" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+  <text x="32" y="37" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#ffffff">AM EX</text>
+</svg>
