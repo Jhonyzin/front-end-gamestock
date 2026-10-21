@@ -1,7 +1,7 @@
 // Comunicação com a API PHP usando fetch.
 // Toda resposta vem no formato {sucesso, dados} ou {sucesso: false, erro}.
 
-export const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost/gamestock/backend/api').replace(/\/$/, '');
+export const API_URL = (import.meta.env.VITE_API_URL || 'https://back-end-gamestock.onrender.com/api').replace(/\/$/, '');
 
 // Endereço do back-end sem o "/api" (usado para as imagens de /uploads/)
 export const BACKEND_URL = API_URL.replace(/\/api$/, '');
